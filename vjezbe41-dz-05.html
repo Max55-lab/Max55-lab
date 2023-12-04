@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	let objekt1 = {
+  firstName: "Marko",
+  lastName: "Maric",
+  age: 40,
+  eyeColor: "black"
+};
+
+	let objekt2 = {
+  firstName: "Josip",
+  lastName: "Galic",
+  age: 20,
+  eyeColor: "red"
+};	
+let objekt3 = {
+  firstName: "Milja",
+  lastName: "Maric",
+  age: 12,
+  eyeColor: "purple"
+};
+
+function ispisKeyVrijednosti(objekt)
+{
+	for(let key in objekt)
+	{
+		document.write(key+objekt[key]+"<br/>");
+	}
+	document.write("<br/>");
+}
+ispisKeyVrijednosti(objekt1);
+ispisKeyVrijednosti(objekt2);
+ispisKeyVrijednosti(objekt3);
+</script>
+</body>
+</html>

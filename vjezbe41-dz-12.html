@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+	functionSavrseniBroj(doBroja)
+	{
+		for(let i=0;i<=doBroja;i++)
+		{
+			let suma=0;
+			for(let j=0;j<i;j++)
+			{
+				if(i%j===0)
+				{
+					suma+=j;
+				}
+			}
+             if(suma===i)
+             {
+             	console.log(i);
+             }
+		}
+		savrseniBrojevi(10000);
+	}
+</script>	
+</body>
+</html>

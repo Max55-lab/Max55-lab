@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+	const Temperatura = ['2023-11-29', -1, 0, -0.5, 0.5, 0, 1.2, 1.8, 2, 3, 4, 6, 9, 12, 7, 6, 6, 8, 5, 4, 2, 3, 2, 1, 0];
+
+	function obradaTemperature(tempArray) {
+	  const temp = tempArray.slice(1);
+	  const minTemp = Math.min(...temp);
+	  const maxTemp = Math.max(...temp);
+	  const StandTemp = temp.reduce((acc, curr) => acc + curr, 0) / temp.length;
+
+	  console.log("Datum:", tempArray[0]);
+	  console.log("Najniža temperatura:", minTemp);
+	  console.log("Najviša temperatura:", maxTemp);
+	  console.log("Prosječna temperatura:", StandTemp.toFixed(2));
+	}
+
+	obradaTemperature(Temperatura);
+</script>	
+</body>
+</html>
